@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ip-request-api:
+    image: ${DOCKER_REGISTRY-}iprequestapi
+    build:
+      context: .
+      dockerfile: ip-request-api/Dockerfile
